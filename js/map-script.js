@@ -14,9 +14,9 @@
 		//DEFINE MAP OPTIONS
 		//=======================================================================================
   		var mapOptions = {
-    		zoom: 18,		
+    		zoom: 13,		
 			mapTypeId: google.maps.MapTypeId.ROADMAP,	
-    		center: new google.maps.LatLng(-12.046014, -77.030503),
+    		center: new google.maps.LatLng(35.6013063,-78.7901647),
 			panControl: true,
   			zoomControl: true,
   			mapTypeControl: true,
@@ -54,7 +54,7 @@
 		//ADD NEW MARKER WITH LABEL
 		//=======================================================================================
 		var marker1 = new MarkerWithLabel({
-       		position: new google.maps.LatLng(-12.046014, -77.030503),
+       		position: new google.maps.LatLng(35.6181673,-78.7798046),
        		draggable: false,
        		raiseOnDrag: false,
        		icon: ' ',
@@ -65,18 +65,18 @@
      		});
     
 		var marker2 = new MarkerWithLabel({
-       		position: new google.maps.LatLng(-12.046040, -77.029269),
+       		position: new google.maps.LatLng(35.5928377,-78.796111),
        		draggable: false,
        		raiseOnDrag: false,
        		icon: ' ',
        		map: map, 
-         	labelContent: '<div class="de-icon circle small-size" style="background-color:#6a6a6a"><i class="de-icon-taxi"></i></div>',
+         	labelContent: '<div class="de-icon circle small-size" style="background-color:#6a6a6a"><i class="de-icon-beer"></i></div>',
        		labelAnchor: new google.maps.Point(0, 0),
        		labelClass: "labels" // the CSS class for the label
      		});
 			
 		var marker3 = new MarkerWithLabel({
-       		position: new google.maps.LatLng(-12.045909, -77.031712),
+       		position: new google.maps.LatLng(35.5839004,-78.7999887),
        		draggable: false,
        		raiseOnDrag: false,
        		icon: ' ',
@@ -87,45 +87,45 @@
      		});
 			
 		var marker4 = new MarkerWithLabel({
-       		position: new google.maps.LatLng(-12.046617, -77.030567	),
+       		position: new google.maps.LatLng(35.5832004,-78.7999887),
        		draggable: false,
        		raiseOnDrag: false,
        		icon: ' ',
        		map: map, 
-         	labelContent: '<div class="de-icon circle small-size" style="background-color:#c89d1b"><i class="de-icon-coffee"></i></div>',
+         	labelContent: '<div class="de-icon circle small-size" style="background-color:#c89d1b"><i class="de-icon-beer"></i></div>',
        		labelAnchor: new google.maps.Point(0, 0),
        		labelClass: "labels" // the CSS class for the label
      		});
 			
 		var marker5 = new MarkerWithLabel({
-       		position: new google.maps.LatLng(-12.045857, -77.032538),
+       		position: new google.maps.LatLng(-35.5823004,-78.7999887),
        		draggable: false,
        		raiseOnDrag: false,
        		icon: ' ',
        		map: map, 
-         	labelContent: '<div class="de-icon circle small-size" style="background-color:#f0394d"><i class="de-icon-basket"></i></div>',
+         	labelContent: '<div class="de-icon circle small-size" style="background-color:#f0394d"><i class="de-icon-tree"></i></div>',
        		labelAnchor: new google.maps.Point(0, 0),
        		labelClass: "labels" // the CSS class for the label
      		});	
 		
 		var marker6 = new MarkerWithLabel({
-       		position: new google.maps.LatLng(-12.046053, -77.028732),
+       		position: new google.maps.LatLng(35.5828004,-78.7999887),
        		draggable: false,
        		raiseOnDrag: false,
        		icon: ' ',
        		map: map, 
-         	labelContent: '<div class="de-icon circle small-size" style="background-color:#f6700e"><i class="de-icon-paper-plane"></i></div>',
+         	labelContent: '<div class="de-icon circle small-size" style="background-color:#f6700e"><i class="de-icon-beer"></i></div>',
        		labelAnchor: new google.maps.Point(0, 0),
        		labelClass: "labels" // the CSS class for the label
      		});	
 			
 		var marker7 = new MarkerWithLabel({
-       		position: new google.maps.LatLng(-12.045363, -77.029939),
+       		position: new google.maps.LatLng(35.5836004,-78.7999887),
        		draggable: false,
        		raiseOnDrag: false,
        		icon: ' ',
        		map: map, 
-         	labelContent: '<div class="de-icon circle small-size" style="background-color:#0d9a48"><i class="de-icon-tree"></i></div>',
+         	labelContent: '<div class="de-icon circle small-size" style="background-color:#0d9a48"><i class="de-icon-coffee"></i></div>',
        		labelAnchor: new google.maps.Point(0, 0),
        		labelClass: "labels" // the CSS class for the label
      		});			
