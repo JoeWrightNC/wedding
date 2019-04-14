@@ -237,11 +237,11 @@
                     <div class="rsvp-wrapper">
                     	<div class="form-group">
     						<label for="inputname">NAME</label>
-    						<input type="text" class="form-control ajax-input" id="inputname" placeholder="Your Name" data-required="Name Required" data-output-label="Output Name">
+    						<input type="text" name="Name" class="form-control ajax-input" id="inputname" placeholder="Your Name" data-required="Name Required" data-output-label="Output Name">
  						</div>                        
                         <div class="form-group">
     						<label for="inputemail">EMAIL</label>
-    						<input type="email" class="form-control ajax-input" id="inputemail" placeholder="Your Email" data-required="Email Required" data-output-label="Output Email">
+    						<input type="email" name="Email" class="form-control ajax-input" id="inputemail" placeholder="Your Email" data-required="Email Required" data-output-label="Output Email">
  						</div>   
                                          
                     	<div class="form-group">
@@ -249,10 +249,10 @@
                            	<div id="events-radio" class="ajax-input ajax-radio" data-required="Are you Attending?" data-output-label="Attending">
                             	<div data-toggle="buttons">
   									<label class="btn btn-primary no-icon">
-    									<input type="radio" name="attending" id="accept" value="Accept with Pleasure"> Accept with Pleasure
+    									<input type="radio" name="Attending" id="accept" value="Accept with Pleasure"> Accept with Pleasure
   									</label>
                                		<label class="btn btn-primary no-icon">
-    									<input type="radio" name="attending" id="decline" value="Decline with Regrets"> Decline with Regrets
+    									<input type="radio" name="Attending" id="decline" value="Decline with Regrets"> Decline with Regrets
   									</label>
                                 </div>
 							</div> 
@@ -263,10 +263,10 @@
                            	<div id="guest-radio" class="ajax-input ajax-radio" data-required="How many Guest?" data-output-label="Number of Guest">
                             	<div data-toggle="buttons">
   									<label class="btn btn-primary no-icon">
-    									<input type="radio" name="guest" id="Yes" value="Yes"> Yes
+    									<input type="radio" name="Guest" id="Yes" value="Yes"> Yes
   									</label>
                                		<label class="btn btn-primary no-icon">
-    									<input type="radio" name="guest" id="No" value="No">No
+    									<input type="radio" name="Guest" id="No" value="No">No
   									</label>
                      
 																</div>
@@ -275,7 +275,7 @@
 
 																<div class="form-group">
 																	<label for="inputsongs">SONGS FOR THE PLAYLIST?</label>
-																	<input type="textarea" class="form-control ajax-input" id="inputsongs" placeholder="Not Wagon Wheel" data-output-label="Output text">
+																	<input type="textarea" name="Songs" class="form-control ajax-input" id="inputsongs" placeholder="Not Wagon Wheel" data-output-label="Output text">
 															 </div>   
                         
                         
@@ -346,6 +346,20 @@
         <!-- Custom Additional Script -->
         <script type="text/javascript" src="js/main-slider-fade.js"></script>
         <script type="text/javascript" src="js/side-navbar.js"></script>
-        
+        <script>
+					var $form = $('form#rsvpform'),
+					url = 'https://script.google.com/macros/s/AKfycbxoHeaesXBvt08Ut9PdBpYEBaJZcn9RnX1_HuU9jsIuWHguHhHj/exec'
+					$('#submitButton').on('click', function(e) {
+						e.preventDefault();
+						var jqxhr = $.ajax({
+							url: url,
+							method: "GET",
+							dataType: "json",
+							data: $form.serializeObject()
+						}).success(
+							// do something
+						);
+					})
+				</script>
 	</body>
 </html>
