@@ -219,6 +219,9 @@
         
         	<!-- CONTAINER -->
 			<div class="container">
+								<div id="success" style="display:none">
+									<h2>Thank you for your response!</h2>
+								</div>
                 <form method="post" action="rsvp.php" id="rsvpform">
                 <!--TEXT SECTION-->
                 <div class="row">
@@ -359,7 +362,8 @@
 							dataType: "json",
 							data: $form.serializeObject()
 						}).success(
-							// do something
+							$form.hide(),
+							$success.show()
 						);
 					})
 				</script>
