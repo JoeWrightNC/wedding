@@ -350,6 +350,7 @@
 					var $form = $('form#rsvpform'),
 					url = 'https://script.google.com/macros/s/AKfycbxoHeaesXBvt08Ut9PdBpYEBaJZcn9RnX1_HuU9jsIuWHguHhHj/exec'
 					$('#submitButton').on('click', function(e) {
+						console.log($form.serializeObject())
 						e.preventDefault();
 						var jqxhr = $.ajax({
 							url: url,
